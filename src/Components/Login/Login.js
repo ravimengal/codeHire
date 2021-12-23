@@ -2,7 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Form, Button, Card } from "react-bootstrap";
 import "./Login.css";
+import {useState} from "react"
 const Login = () => {
+
+
+    const [name,setName]=useState([])
+    const [password,setPassword]=useState([])
   return (
     <>
       <Card className="mt-5 ">

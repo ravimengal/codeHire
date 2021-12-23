@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Container, Offcanvas } from "react-bootstrap";
+import { Navbar, Nav, Container, Offcanvas, Button } from "react-bootstrap";
 const Navv = () => {
   return (
     <Navbar bg="light" expand={false}>
@@ -24,6 +24,7 @@ const Navv = () => {
               <Nav.Link as={Link} to="/about">
                 About
               </Nav.Link>
+              <Button variant="danger">Logout</Button>
             </Nav>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
