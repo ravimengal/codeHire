@@ -5,7 +5,7 @@ import "./Signup.css";
 const Signup = () => {
   return (
     <>
-      <Card>
+      <Card className="mt-5 ">
         
         <Card.Body>
           <h2 className="text-center mb-4"> Signup</h2>
@@ -28,11 +28,12 @@ const Signup = () => {
           </Form>
         
         </Card.Body>
-      </Card>
-
-      <div className="w-100 text-center mt-2">
+        <div className="w-100 text-center mt-2">
         Already Have Account? <Link to="/login">Login</Link>
       </div>
+      </Card>
+
+      
     </>
   );
 };
