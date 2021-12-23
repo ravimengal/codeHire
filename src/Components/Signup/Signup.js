@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Form, Button, Card } from "react-bootstrap";
+
 import "./Signup.css";
 const Signup = () => {
   const [name, setName] = useState();
@@ -16,7 +17,7 @@ const Signup = () => {
     localStorage.setItem('data',json)
   };
 
-  useEffect(() => {}, [name]);
+
 
   return (
     <>
@@ -54,7 +55,7 @@ const Signup = () => {
                 onClick={handleSubmit}
                 type="submit"
               >
-                Log In
+                Signup
               </Button>
             ) : (
               <Button className="w-100 mt-2" disabled>
